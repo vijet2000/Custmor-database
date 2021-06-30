@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer dbs app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!--Header-->
+        <header id="header">
+            <nav>
+                <div class="continer">
+                    <div class="text-center">
+                        <a href="/" class="nav-brand text-dark"> User Management System </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!--/Header-->
+
+    <!-- main-site -->
+        <main id="site-main">
+            <div class="continer">
+                <div class="box-nav d-flex-justify-between">
+                    <div class="filter">
+                        <a href="/"><i class="fas fa-angle-double-left"></i> ALL USERS </a>
+                    </div>
+                </div>
+                <div class="form-title text-center">
+                    <h1 class="text-dark" > New User </h1>
+                    <span class="text-light"> Use The Below Form To save Changes </span>
+                </div>
+            <!--Form Handling-->
+                <form method="POST" id="update_user">
+                    <div class="new_user">
+                        <div class="form-group">
+                            <label for="name", class="text-light">Name</label>
+                            <input type="hidden" name="id" value="">
+                            <input type="text" name="name" value="" placeholder="Mark Stoenis">
+                        </div>
+                        <div class="form-group">
+                            <label for="email", class="text-light">Email</label>
+                            <input type="text" name="email" value="" placeholder="example2000@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender", class="text-light">Gender</label>
+                            
+                            <input type="radio" id="radio-1" name="gender" value="Male">
+                            <label for="radio-1" class="text-light">Male</label>
+
+                            <input type="radio" id="redio-2" name="gender" value="Female">
+                            <label for="radio-2" class="text-light">Female</label>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status", class="text-light">Status</label>
+                                <input type="radio" id="radio-3" name="status" value="Active">
+                                <label for="radio-3" class="text-light">Active</label>
+                                
+                                <input type="radio" id="radio-4" name="status" value="Inactive">
+                                <label for="radio-4" class="text-light">Inactive</label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn text-dark update">Save</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </main>
+    <!-- /main-site -->
+</body>
+</html>
